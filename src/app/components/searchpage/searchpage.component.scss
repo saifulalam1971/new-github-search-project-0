@@ -1,0 +1,36 @@
+.main{
+    margin: 0;
+    padding:0;
+}
+.heading{
+    width:100%;
+    height: 50px;
+    background-color: #D9230F;
+    border-radius: 5px;
+    padding: 0px;
+    h2{
+    margin-top: 5px;
+    margin-left: 20px;
+    color: white;
+    padding-top: 7px;
+    }
+}
+.users{
+    h1{
+        margin-left: 35px;
+    }
+    h2{
+        color: #77777F;
+        margin-left: 35px;
+    }
+}
+.form-group{
+    .form-control{
+        width:93%;
+        margin-left: 35px;
+        height: 25px;
+        border-radius: 3px;
+       
+    } 
+    
+}

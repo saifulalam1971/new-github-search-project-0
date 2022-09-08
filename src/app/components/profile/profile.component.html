@@ -1,0 +1,76 @@
+
+<!-- <div class="card" style="width: 18rem; width:600px; height:300px" >
+    <img src={{imgurl}} class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">name : {{name}}</h5>
+      <p class="card-text"> bio : {{bio}}</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">Company : {{company}} </li>
+      <li class="list-group-item">location : {{location}}</li>
+      <li class="list-group-item">followers : {{followers}}</li>
+    </ul>
+   
+</div> -->
+<div>
+    <div fxLayout="row" fxLayoutAlign="space-between center">
+        <table class="main-table">
+            <tr><td>{{name}}</td></tr>
+            <tr>
+                <td fxLayout="row" fxLayoutAlign="space-between center">
+                    <div class="p-image">
+                        <mat-card class="profile-image">
+                        <img src={{imgurl}} class="card-img-top" alt="...">
+                        <button><a href="{{url}}">view profile</a></button>
+                        </mat-card>
+                    </div>
+                    <div class="personal-details">
+                        <div fxLayout="row" fxLayoutGap="5px" class="top-container">
+                            <span class="reposNo">public repos: {{public_repos}}</span>
+                            <span class="gist">public gists: {{public_gists}}</span>
+                            <span class="follower">Followers: {{followers}}</span>
+                            <span class="following">Following: {{following}}</span>
+                        </div>
+                       <table>
+                            
+                            <tr>
+                                <td>Company:  {{company}}</td>
+                            </tr>
+                            <tr>
+                                <td>Website/Blog:  {{blog}}</td>
+                            </tr>
+                            <tr>
+                                <td>Location:  {{location}}</td>
+                            </tr>
+                            <tr>
+                                <td>Member since:  {{memberSince}}</td>
+                            </tr>
+                            <tr>
+                                <td>Email:  {{email}}</td>
+                            </tr>
+                            <tr>
+                                <td>Bio: {{bio}}</td>
+                            </tr>
+                       </table>
+                    </div>
+                   
+                </td>
+            </tr>
+       
+        </table>
+    </div>
+    <h2 class="latest-repos">Latest Repos</h2>
+    <div class="repos" fxLayout="row" fxLayoutAlign="space-between center" *ngFor="let name of repoName;let i=index">
+       <span class="repo-name" fxFlex="60">Repository Name: {{repoName[i]}}</span>
+       <div class="middle-container" fxLayout="row" fxLayoutGap="5px" fxFlex="30">
+         <span class="forks">Forks: {{repoForks[i]}}</span>
+         <span class="watchers">Watchers: {{repoWatchers[i]}}</span>
+         <span class="star">Star: {{repoStar[i]}}</span>
+       </div>
+       <div fxFlex="10">
+          <span class="repo-page" ><a href="{{repoUrl[i]}}">Repo Page</a></span>
+       </div>
+     
+    </div>
+
+</div>

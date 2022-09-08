@@ -1,0 +1,21 @@
+<div class="main" fxLayout="column">
+    <div class="heading" fxLayout="row">
+        <h2>GitHub Profile Finder
+        </h2>
+    </div>
+    <div class="users">
+        <h1>Search GitHub Users</h1>
+        <h2>Enter a username to fetch a user's profile info and repos</h2>
+    </div>
+    <div class="row">
+        <form class="well">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Github Username" [(ngModel)]="userName" name="username" (keyup.enter)="sendUser()">
+            </div>    
+        </form>    
+    </div>
+    <div *ngIf="isProfileShow">
+        <app-profile></app-profile> 
+    </div>
+</div>
+

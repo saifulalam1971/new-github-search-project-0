@@ -1,0 +1,122 @@
+.profile-image{
+    width:280px;
+    img{
+    width: 250px;
+    height:250px;
+    }
+    button{
+        margin-top: 20px;
+        background-color: #D1220F;
+        height:40px;
+        width:250px;
+        border-radius: 5px;
+        color:white;
+        a{
+            color:white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+    }
+}
+
+.main-table{
+    
+    border-collapse: collapse;
+    width: 100%;
+    width: 94%;
+    margin-left: 35px;
+    margin-top: 15px;
+    tr td{
+        border-radius: 3px;
+    }
+    th,td{
+        border: 1px solid gray;
+        padding: 8px;
+        border-radius: 2px;
+    }
+}
+.personal-details{
+    //background-color: red;
+    width:125px;
+    table{
+        margin-top: 25px;
+        border-collapse: collapse;
+        width: 100%;
+
+
+        tr span{
+            width:600px;
+            border: 1px solid gray;
+            border-radius: 2px;
+        }
+        tr td{
+            border-radius: 5px;
+        }
+    }
+     width:75%;
+     height:325px;
+}
+.repos{
+    width:94%;
+    margin-left: 35px;;
+    height:80px;
+    background-color: #F4F4F4;
+    border-radius: 5px;
+    margin-top: 10px;
+    border: 1px solid gray;
+    .repo-name{
+        margin-left: 20px;
+    }
+    .repo-page{
+        margin-right: 30px;
+        border-radius: 5px;
+        background-color: #434545;
+        padding:12px;
+        color:white;
+        a{
+            text-decoration: none;
+            color:white;
+        }
+    }
+}
+.latest-repos{
+    margin-left: 35px;
+}
+.top-container{
+    span{
+    width: 105px;
+    height: 20px;
+    padding: 3px;
+    border-radius: 3px;
+    }
+    .reposNo{
+        background-color: #474949;
+    }
+    .gist{
+       background-color: #D9230F;
+    }
+    .follower{
+        background-color: #469408;
+    }
+    .following{
+        background-color: #029ACF;
+    }
+}
+.middle-container{
+    //background-color: red;
+    span{
+        padding: 3px;
+        border-radius: 3px;
+    }
+    .forks{
+        background-color: #D9230F;
+
+    }
+    .watchers{
+        background-color: #469408;
+    }
+    
+    .star{
+        background-color: #029ACF;
+    }
+}
